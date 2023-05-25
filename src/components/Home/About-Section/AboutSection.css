@@ -1,0 +1,138 @@
+.about-section {
+  background: #111111;
+  border-top: 1px solid #333333;
+  padding: 60px 88px;
+  color: #fff;
+  font-family: "Inter";
+}
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.about-heading {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 53px;
+  letter-spacing: 0.16px;
+}
+.about-middle {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-image-name {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.about-image > img {
+  border-radius: 50%;
+  width: 112px;
+  height: 112px;
+  border: 3px solid #fff8d1;
+}
+.about-name {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  letter-spacing: 0.16px;
+}
+
+.about-name > h3 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.about-name > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #a0a0a0;
+}
+
+.about-contact > button {
+  background-color: #ffc700;
+  border-radius: 8px;
+  padding: 17px 32px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  transition: 0.3s ease-in-out;
+}
+.about-contact > button:hover {
+  background-color: rgba(227, 150, 0, 1);
+}
+.about-bottom {
+  background: #181818;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 36px 48px;
+}
+.about-bottom > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.16px;
+}
+
+.about-service > button {
+  background-color: #ffc700;
+  border-radius: 8px;
+  padding: 17px 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.16px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.about-service > button:hover {
+  background-color: rgba(227, 150, 0, 1);
+}
+@media (max-width: 426px) {
+  .about-section {
+    padding: 60px 28px;
+    gap: 41px;
+  }
+  .about-heading {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .about-middle {
+    flex-direction: column;
+    gap: 41px;
+    align-items: flex-start;
+    margin-top: 0px;
+  }
+  .about-image-name {
+    gap: 24px;
+  }
+  .about-image > img {
+    width: 80px;
+    height: 80px;
+  }
+  .about-name {
+    gap: 8px;
+  }
+  .about-name > h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .about-contact > button {
+    padding: 12px 19px;
+  }
+  .about-bottom {
+    padding: 12px;
+  }
+  .about-service > button {
+    padding: 12px 19px;
+    font-size: 12px;
+    margin-bottom: 48px;
+  }
+}

@@ -1,0 +1,184 @@
+.hero-section {
+  position: relative;
+  font-family: "Inter";
+  background: url("../../../Assets/images/Hero-background.png");
+  background-repeat: no-repeat;
+  background-position: 34px center;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 19px;
+  padding-top: 100px;
+}
+
+.hero-content > .hero-heading {
+  font-family: "Playfair Display";
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 85px;
+}
+.hero-content > .hero-subheading {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.hero-links {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 76px;
+}
+.hero-button {
+  background: #ffc700;
+  border-radius: 8px;
+  width: 147px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.16px;
+  transition: 0.3s ease-in-out;
+}
+.hero-button:hover {
+  background: #e39600;
+}
+.hero-contact {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  position: relative;
+}
+.hero-contact > img {
+  width: 14px;
+  height: 14px;
+}
+.hero-contact > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.hero-contact::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 1px;
+  background-color: #ffc700;
+  bottom: -5px;
+  transition: width 0.3s ease-in-out;
+}
+.hero-contact:hover::before {
+  width: 49px;
+}
+.hero-scroll {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  padding-bottom: 86px;
+}
+.hero-images {
+  display: flex;
+  gap: 24px;
+  margin-top: 80px;
+}
+.hero-images > img {
+  border-radius: 8px;
+  width: 200px;
+  height: 200px;
+}
+.scroll-button {
+  margin-top: 98px;
+  margin-left: -200px;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+.scroll-button:hover > img {
+  transform: translateY(10px); /* Adjust the translateY value as needed */
+}
+@keyframes moveDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(
+      10px
+    ); /* Adjust the translateY value to match the hover translateY value */
+  }
+}
+.scroll-button:hover img {
+  animation: moveDown 0.3s ease-in-out;
+}
+.scrolling-text {
+  display: flex;
+  flex-direction: column;
+}
+.scrolling-text > .word {
+  rotate: 90deg;
+}
+.scrolling-text > .word:not(:last-child) {
+  rotate: 90deg;
+  margin-bottom: -7px;
+}
+
+@media (max-width: 1024px) {
+  .hero-background::after {
+    font-size: 185px;
+    line-height: 200px;
+  }
+  .scroll-button {
+    margin-left: 0px;
+  }
+  .hero-scroll {
+    gap: 66px;
+  }
+}
+@media (max-width: 768px) {
+  .scroll-button {
+    display: none;
+  }
+  .hero-content > .hero-heading {
+    font-size: 60px;
+    line-height: 80px;
+  }
+  .hero-images > img {
+    border-radius: 8px;
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (max-width: 426px) {
+  .scroll-button {
+    display: none;
+  }
+  .hero-content > .hero-heading {
+    font-size: 32px;
+    line-height: 43px;
+  }
+  .hero-content > .hero-subheading {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .hero-links {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .hero-images > img {
+    border-radius: 8px;
+    width: 70px;
+    height: 70px;
+  }
+}
