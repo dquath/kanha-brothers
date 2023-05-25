@@ -38,14 +38,6 @@ const Footer = () => {
                 <p>Office Stationary</p>
               </div>
             </div>
-            <div className="footer-columns">
-              <h1 className="footer-column-title">Jobs</h1>
-              <div className="footer-links">
-                <p>SDE</p>
-                <p>Manager</p>
-                <p>Internship</p>
-              </div>
-            </div>
           </div>
           <div className="footer-address">
             <div className="footer-columns">
