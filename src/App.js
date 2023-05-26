@@ -5,6 +5,7 @@ import Home from "./Pages/Home/Home";
 import Navbar from "./components/common/Navbar/Navbar";
 import "./global.css";
 import Footer from "./components/common/Footer/Footer";
+import Services from "./Pages/Services/Services";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* Add other routes here */}
+        <Route path="/services" element={<Services />} />
       </Routes>
       <Footer />
     </Router>
