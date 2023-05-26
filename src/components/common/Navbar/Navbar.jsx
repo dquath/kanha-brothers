@@ -1,4 +1,6 @@
+// Navbar.js
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import Logo from "../../../Assets/images/Logo.png";
 import logoMobile from "../../../Assets/images/Logo-mobile.svg";
@@ -17,7 +19,9 @@ const Navbar = () => {
   return (
     <div className={`nav-bar ${isMenuOpen ? "open" : ""}`}>
       <div className="logo">
-        <img src={Logo} alt="Logo" />
+        <Link to="/" onClick={handleLinkClick}>
+          <img src={Logo} alt="Logo" />
+        </Link>
       </div>
       <div
         className={`menu-toggle ${isMenuOpen ? "open" : ""}`}
@@ -32,23 +36,26 @@ const Navbar = () => {
       <div className={`nav-links ${isMenuOpen ? "open" : ""}`}>
         {isMenuOpen ? (
           <div className="logo-mobile">
-            <img src={logoMobile} alt="Logo-Mobile" />
+            <Link to="/" onClick={handleLinkClick}>
+              <img src={logoMobile} alt="Logo-Mobile" />
+            </Link>
           </div>
-        ) : (
-          ""
-        )}
-        <a href="#" onClick={handleLinkClick}>
+        ) : null}
+        <Link to="/" onClick={handleLinkClick}>
+          Home
+        </Link>
+        <Link to="/services" onClick={handleLinkClick}>
           Services
-        </a>
-        <a href="#" onClick={handleLinkClick}>
+        </Link>
+        <Link to="/products" onClick={handleLinkClick}>
           Products
-        </a>
-        <a href="#" onClick={handleLinkClick}>
+        </Link>
+        <Link to="/jobs" onClick={handleLinkClick}>
           Jobs
-        </a>
-        <a href="#" onClick={handleLinkClick}>
+        </Link>
+        <Link to="/contact" onClick={handleLinkClick}>
           Contact
-        </a>
+        </Link>
       </div>
     </div>
   );

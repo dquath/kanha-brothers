@@ -9,11 +9,9 @@ import AboutSection from "../../components/Home/About-Section/AboutSection";
 const Home = () => {
   return (
     <div className="home">
-      <Navbar />
       <Hero />
       <ServiceSection />
       <AboutSection />
-      <Footer />
     </div>
   );
 };
