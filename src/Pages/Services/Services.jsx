@@ -16,6 +16,19 @@ const Services = () => {
           <button>Explore our services</button>
         </div>
       </div>
+      <div className="our-services">
+        <h2>Our Services</h2>
+        <div className="image-upper">
+          <img src="https://images.pexels.com/photos/7014415/pexels-photo-7014415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img"/>
+          <img src="https://images.pexels.com/photos/7014415/pexels-photo-7014415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img"/>
+          <img src="https://images.pexels.com/photos/7014415/pexels-photo-7014415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img"/>
+        </div>
+        <div className="image-lower">
+          <img src="https://images.pexels.com/photos/7014415/pexels-photo-7014415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img"/>
+          <img src="https://images.pexels.com/photos/7014415/pexels-photo-7014415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img"/>
+          <img src="https://images.pexels.com/photos/7014415/pexels-photo-7014415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img"/>
+        </div>
+      </div>
   </div>;
 };
 

@@ -57,6 +57,30 @@ body{
         padding-right: 28px;
     }
     .btndesc{
-        gap: 51.31px;
+        gap: 54px;
     }
   }
+
+.our-services{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.our-services > h2 {
+    font-family: inter;
+    font-size: 48px;
+}
+
+.image-upper > img {
+    height: 422px;
+    width: 308px;
+    border-radius: 8px;
+    gap: 100px;
+}
+
+.image-lower > img {
+    height: 422px;
+    width: 308px;
+    border-radius: 8px;
+}
