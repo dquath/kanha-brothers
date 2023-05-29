@@ -62,25 +62,29 @@ body{
   }
 
 .our-services{
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
+
 }
 
 .our-services > h2 {
     font-family: inter;
     font-size: 48px;
+    margin-left: 88px;
 }
+
+/* .image-upper{
+    border-radius: 90px;
+} */
 
 .image-upper > img {
     height: 422px;
     width: 308px;
     border-radius: 8px;
-    gap: 100px;
+    margin: 90px;
 }
 
 .image-lower > img {
     height: 422px;
     width: 308px;
     border-radius: 8px;
+    margin: 90px;
 }
