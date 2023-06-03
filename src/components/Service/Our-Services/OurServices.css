@@ -1,0 +1,32 @@
+.our-services {
+  padding: 54px 88px;
+}
+.our-services > h2 {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 54px;
+}
+.all-service-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 52px 0;
+  justify-items: center;
+}
+@media (max-width: 768px) {
+  .our-services {
+    padding: 73px 45px;
+  }
+  .our-services > h2 {
+    margin-bottom: 45px;
+  }
+  .all-service-cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 52px;
+  }
+}
+@media (max-width: 480px) {
+  .all-service-cards {
+    grid-template-columns: 1fr;
+  }
+}

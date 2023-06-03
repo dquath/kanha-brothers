@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./ServiceSection.css";
-import ServiceCard from "./Service-Card/ServiceCard";
+import ServiceCard from "../../common/Service-Card/ServiceCard";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
