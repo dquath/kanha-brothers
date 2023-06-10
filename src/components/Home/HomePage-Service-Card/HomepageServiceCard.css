@@ -53,16 +53,3 @@
 .service-card:hover .card-title {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
 }
-
-@media (max-width: 480px) {
-  .service-card {
-    width: 213px;
-    height: 291.84px;
-  }
-  .service-card > .card-title {
-    padding: 10px 43.5px;
-  }
-  .service-card > .card-title > h1 {
-    font-size: 20px;
-  }
-}
