@@ -48,7 +48,7 @@ body{
     margin-bottom: 78px;
 }
 
-@media (max-width: 426px) {
+@media only screen and (max-width: 600px) {
     .heading{
         font-size: 32px;
     }
@@ -62,7 +62,7 @@ body{
   }
 
 .our-services{
-    
+
 }
 
 .our-services > h2 {
@@ -75,12 +75,6 @@ body{
     border-radius: 90px;
 } */
 
-.image-upper > img {
-    height: 422px;
-    width: 308px;
-    border-radius: 8px;
-    margin: 90px;
-}
 
 .image-lower > img {
     height: 422px;

@@ -1,8 +1,8 @@
 .service-card {
   width: 308px;
   height: 422px;
-  background: url("../../../../Assets/images/service-card-image.png") no-repeat
-    center;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
   display: flex;
   flex-direction: column;
   cursor: pointer;
@@ -37,8 +37,11 @@
   opacity: 0;
   transition: 0.2s ease-in;
 }
-
-.card-link > h2 {
+.card-link a {
+  text-decoration: none;
+  color: #fff;
+}
+.card-link h2 {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;

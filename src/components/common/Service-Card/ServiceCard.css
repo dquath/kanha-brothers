@@ -1,0 +1,68 @@
+.service-card {
+  width: 308px;
+  height: 422px;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 1.5s ease-in-out;
+}
+.card-title {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 22.5px 66px;
+  margin-top: auto;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.00535714) -100.93%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  border-radius: 0px 0px 8px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  transition: 0.5s ease-in-out;
+}
+.title-text {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+}
+.card-link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  opacity: 0;
+  transition: 0.2s ease-in;
+}
+.card-link a {
+  text-decoration: none;
+  color: #fff;
+}
+.card-link h2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+.service-card:hover .card-link {
+  opacity: 1;
+}
+.service-card:hover .card-title {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+}
+
+@media (max-width: 480px) {
+  .service-card {
+    width: 213px;
+    height: 291.84px;
+  }
+  .service-card > .card-title {
+    padding: 10px 43.5px;
+  }
+  .service-card > .card-title > h1 {
+    font-size: 20px;
+  }
+}
