@@ -1,6 +1,7 @@
 import React from 'react'
 import './Printing.css';
-import rightArrow from "../../Assets/icons/right-arrow-white.svg";
+// import rightArrow from "../../Assets/icons/right-arrow-white.svg";
+import OurServices from '../../components/Service/Our-Services/OurServices';
 
 const Printing = () => {
   return (
@@ -13,7 +14,7 @@ const Printing = () => {
           <p>Lorem ipsum dolor sit amet consectetur. Cras in et dui facilisis. Dignissim in et ac eu vel. Massa eu odio erat vehicula mi. Id mi dictum id congue nunc enim. Ut quisque varius duis tellus sem et blandit. Sed neque semper sem nunc nisl. Fermentum augue quam feugiat urna egestas convallis.</p>
         </div>
       </div>
-      <div className='image-upper'>
+      {/* <div className='image-upper'>
         <img src="https://images.pexels.com/photos/7014415/pexels-photo-7014415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img"/>
         <img src="https://images.pexels.com/photos/7014415/pexels-photo-7014415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img"/>
         <img src="https://images.pexels.com/photos/7014415/pexels-photo-7014415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img"/>
@@ -22,8 +23,9 @@ const Printing = () => {
         <img src="https://images.pexels.com/photos/7014415/pexels-photo-7014415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img"/>
         <img src="https://images.pexels.com/photos/7014415/pexels-photo-7014415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img"/>
         <img src="https://images.pexels.com/photos/7014415/pexels-photo-7014415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img"/>
-      </div>
-      <div className='lower-icon'>
+      </div> */}
+      <OurServices />
+      {/* <div className='lower-icon'>
         <div className='one'>
           <p>1</p>
         </div>
@@ -33,7 +35,7 @@ const Printing = () => {
         <div className='arrow-icon'>
           <img src={rightArrow} alt='Right-arrow'/>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
