@@ -6,7 +6,8 @@ import Navbar from "./components/common/Navbar/Navbar";
 import "./global.css";
 import Footer from "./components/common/Footer/Footer";
 // import Services from "./Pages/Services/Services";
-import Printing from "./Pages/Single-service/Printing";
+// import Printing from "./Pages/Single-service/Printing";
+import Contact from "./Pages/Contact/Contact";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         {/* <Route path="/services" element={<Services />} /> */}
-        <Route path="/services" element={<Printing/>} />
+        {/* <Route path="/services" element={<Printing/>} /> */}
+        <Route path="/services" element={<Contact/>} />
       </Routes>
       <Footer />
     </Router>

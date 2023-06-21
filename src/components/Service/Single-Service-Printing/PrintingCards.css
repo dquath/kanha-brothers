@@ -1,0 +1,52 @@
+.our-services {
+    padding: 54px 88px;
+  }
+  .our-services > h2 {
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 54px;
+  }
+  .all-printing-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 52px 0;
+    justify-items: center;
+  }
+  @media (max-width: 768px) {
+    .our-services {
+      padding: 73px 45px;
+    }
+    .our-services > h2 {
+      margin-bottom: 45px;
+    }
+    .all-printing-cards {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 52px;
+    }
+  }
+  @media (max-width: 480px) {
+    .our-services {
+      padding: 32px 52px 60px;
+    }
+    .our-services > h2 {
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .all-printing-cards > .service-card {
+      width: 213px;
+      height: 291.84px;
+    }
+    .all-printing-cards > .service-card > .card-title {
+      padding: 10px 43.5px;
+    }
+    .all-printing-cards > .service-card > .card-title > h1 {
+      font-size: 20px;
+    }
+    .all-printing-cards {
+      grid-template-columns: 1fr;
+      grid-gap: 36px;
+    }
+  }
+  
