@@ -19,12 +19,12 @@ const Contact = () => {
       <div className='right-part'>
         <div className='right-top'>
           <h4>CONTACT US</h4>
-          <p>+918763052472</p>
+          <p id='phno'>+918763052472</p>
           <p>hello@example.com</p>
         </div>
         <div className='right-down'>
           <h4>ADDRESS</h4>
-          <p>Market Complex, Jyoti Vihar,</p>
+          <p id='markt'>Market Complex, Jyoti Vihar,</p>
           <p>Burla, Odisha 768019</p>
         </div>
         <div className='map-image'>

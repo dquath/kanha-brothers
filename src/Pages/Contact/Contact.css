@@ -39,7 +39,7 @@
 .right-part{
     display: flex;
     flex-direction: column;
-    row-gap: 118px;
+    row-gap: 60px;
 }
 .right-top > h4{
     font-size: 20px;
@@ -73,4 +73,26 @@
 }
 .form > button:hover{
     background: #E39600;
+}
+#phno{
+    margin-top: 36px;
+    margin-bottom: 16px;
+}
+.right-down{
+    letter-spacing: 0.16px;
+}
+#markt{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.map-image{
+    margin-top: 28px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+    
 }
