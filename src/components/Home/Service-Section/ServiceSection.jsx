@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import "./ServiceSection.css";
 import ServiceCard from "../../common/Service-Card/ServiceCard";
 import HomepageServiceCard from "../HomePage-Service-Card/HomepageServiceCard";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/splide/dist/css/splide.min.css";
+import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 import { useNavigate } from "react-router-dom";
-
 const ServiceSection = () => {
   const [isMobile, setIsMobile] = useState(false);
   const navigate = useNavigate();
@@ -22,15 +21,6 @@ const ServiceSection = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-
   return (
     <div className="service-section">
       <div className="top-section">
@@ -39,17 +29,17 @@ const ServiceSection = () => {
       </div>
       <div className="bottom-section">
         {isMobile ? (
-          <Slider {...settings}>
-            <div>
+          <Splide className="service-card-carousel">
+            <SplideSlide>
               <HomepageServiceCard />
-            </div>
-            <div>
+            </SplideSlide>
+            <SplideSlide>
               <HomepageServiceCard />
-            </div>
-            <div>
+            </SplideSlide>
+            <SplideSlide>
               <HomepageServiceCard />
-            </div>
-          </Slider>
+            </SplideSlide>
+          </Splide>
         ) : (
           <div className="service-cards">
             <ServiceCard />
