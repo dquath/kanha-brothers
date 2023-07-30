@@ -1,0 +1,35 @@
+.single-service-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #fff8d1;
+  padding-top: 6.375rem;
+  gap: 1.5rem;
+}
+.single-service-heading {
+  font-size: 64px;
+  font-weight: 600;
+  font-family: "Inter";
+}
+
+.single-service-description {
+  font-size: 16px;
+  font-family: "inter";
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .single-service-heading {
+    font-weight: 600;
+    font-size: 60px;
+  }
+}
+@media (max-width: 480px) {
+  .single-service-header {
+    padding-top: 90px;
+  }
+  .single-service-heading {
+    font-size: 32px;
+    text-align: center;
+  }
+}

@@ -1,6 +1,8 @@
 import React from "react";
 import "./AboutSection.css";
+import { useNavigate } from "react-router-dom";
 const AboutSection = () => {
+  const navigate = useNavigate();
   return (
     <div className="about-section">
       <div className="about-content">
@@ -21,7 +23,7 @@ const AboutSection = () => {
             </div>
           </div>
           <div className="about-contact">
-            <button>Contact Us</button>
+            <button onClick={() => navigate("/contact")}>Contact Us</button>
           </div>
         </div>
 
@@ -42,7 +44,9 @@ const AboutSection = () => {
             eget proin arcu hac consequat.
           </p>
           <div className="about-service">
-            <button>Services we offer</button>
+            <button onClick={() => navigate("/services")}>
+              Services we offer
+            </button>
           </div>
         </div>
       </div>

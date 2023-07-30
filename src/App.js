@@ -8,6 +8,7 @@ import SingleService from "./Pages/Services/pages/Single-Service/SingleService";
 import Services from "./Pages/Services/Services";
 // import Printing from "./Pages/Single-service/Printing";
 import Contact from "./Pages/Contact/Contact";
+import Product from "./Pages/Product/Product";
 
 function App() {
   return (
@@ -15,10 +16,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/services" element={<Services />} /> */}
-        {/* <Route path="/services" element={<Printing/>} /> */}
+        <Route path="/services" element={<Services />} />
+        <Route path="/products" element={<Product />} />
         <Route path="/contact" element={<Contact/>} />
-        <Route path="/services" element={<SingleService />} />
+        <Route path="/services/:title" element={<SingleService />} />
       </Routes>
       <Footer />
     </Router>

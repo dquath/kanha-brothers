@@ -3,6 +3,7 @@ import phoneIcon from "../../../Assets/icons/phone-icon.svg";
 import heroSample from "../../../Assets/images/Hero-sample.png";
 import downArrow from "../../../Assets/icons/down-arrow.svg";
 import "./Hero.css";
+import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <div className="hero-section">
@@ -14,7 +15,10 @@ const Hero = () => {
       </div>
 
       <div className="hero-links">
-        <div className="hero-button">Services</div>
+        <Link to={"/services"} style={{ textDecoration: "none" }}>
+          <div className="hero-button">Services</div>
+        </Link>
+
         <div className="hero-contact">
           <img src={phoneIcon} alt="phone-icon" />
           <p>+918763052472</p>

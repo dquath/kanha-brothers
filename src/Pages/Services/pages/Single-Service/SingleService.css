@@ -1,88 +1,25 @@
-body{
-    background-color: rgba(255, 248, 209, 1);
+.single-service {
+  padding: 0 5.5rem;
+  background: #fff8d1;
 }
-.top-part {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    padding-left: 88px;
-    padding-right: 88px;
+.service-card-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 33px;
+  margin: 3.37rem 0;
 }
-.heading > h3 {
-    font-family: Inter;
-    font-size: 48px;
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
 }
-.first-desc{
-    font-family: Inter;
-    font-size: 16px;
+@media (max-width: 480px) {
+  .single-service {
+    padding: 0 1.75rem;
+  }
+  .service-card-section {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 2.12rem 0;
+  }
 }
-.image-upper > img {
-    height: 422px;
-    width: 308px;
-    border-radius: 8px;
-}
-.image-upper{
-    display: flex;
-    gap: 90px;
-    justify-content: space-evenly;
-    padding-top: 54px;
-}
-
-.image-lower > img {
-    height: 422px;
-    width: 308px;
-    border-radius: 8px;
-}
-.image-lower{
-    display: flex;
-    gap: 90px;
-    justify-content: space-evenly;
-    padding-top: 54px;
-}
-.lower-icon {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    padding-bottom: 79px;
-    padding-top: 108px;
-}
-.arrow-icon > img {
-    background: rgba(0, 0, 0, 1);
-}
-.one > p {
-    background: rgba(255, 199, 0, 1);
-    height: 43px;
-    width: 43px;
-    border-radius: 50%;
-
-}
-
-@media only screen and (max-width: 600px) {
-    .top-part{
-        display: flex;
-        flex-direction: column;
-        padding-left: 28px;
-        padding-right: 28px;
-    }
-    .heading > h3 {
-        size: 28px;
-    }
-    .first-desc > p{
-        font-size: 16px;
-    }
-    .image-upper{
-        display: flex;
-        flex-direction: column;
-        gap: 36.1px;
-        align-items: center;
-    }
-    .image-lower{
-        display: flex;
-        flex-direction: column;
-        gap: 36.1px;
-        align-items: center;
-    }
-    .Printing {
-        margin-top: 111px;
-    }
-    }

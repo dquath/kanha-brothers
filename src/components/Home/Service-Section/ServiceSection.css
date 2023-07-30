@@ -28,8 +28,11 @@
   font-size: 16px;
   line-height: 18px;
   letter-spacing: 0.16px;
+  cursor: pointer;
 }
-
+.top-section > button:hover {
+  background: #e39600;
+}
 .service-cards {
   display: flex;
   justify-content: space-between;

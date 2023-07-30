@@ -5,8 +5,10 @@ import HomepageServiceCard from "../HomePage-Service-Card/HomepageServiceCard";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
+import { useNavigate } from "react-router-dom";
 const ServiceSection = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleResize = () => {
@@ -23,7 +25,7 @@ const ServiceSection = () => {
     <div className="service-section">
       <div className="top-section">
         <h1 className="header">Services we offer</h1>
-        <button>See all</button>
+        <button onClick={() => navigate("/services")}>See all</button>
       </div>
       <div className="bottom-section">
         {isMobile ? (

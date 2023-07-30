@@ -1,0 +1,31 @@
+.page-button,
+.arrow-button {
+  background: none;
+  border: none;
+  border-radius: 50%;
+  width: 2.6875rem;
+  height: 2.6875rem;
+  color: #000;
+  font-family: "Inter";
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0 5px;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.arrow-button:hover {
+  background-color: #ffc700;
+}
+
+.page-button:hover {
+  background-color: #ffc700;
+}
+
+.page-button.active {
+  background-color: #ffc700;
+}
+
+.arrow-button.active {
+  background-color: none;
+}

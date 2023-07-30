@@ -1,10 +1,9 @@
 import React from "react";
-import "./OurServices.css";
 import ServiceCard from "../../common/Service-Card/ServiceCard";
-const OurServices = () => {
+const AllProducts = () => {
   return (
     <div className="our-services">
-      <h2>Our Services</h2>
+      <h2>Our Products</h2>
       <div className="all-service-cards">
         <ServiceCard title={"Printing"} />
         <ServiceCard />
@@ -17,4 +16,4 @@ const OurServices = () => {
   );
 };
 
-export default OurServices;
+export default AllProducts;
