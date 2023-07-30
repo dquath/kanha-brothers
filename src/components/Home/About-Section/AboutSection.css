@@ -32,6 +32,7 @@
   width: 112px;
   height: 112px;
   border: 3px solid #fff8d1;
+  object-fit: cover;
 }
 .about-name {
   display: flex;

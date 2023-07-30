@@ -1,11 +1,11 @@
-// App.js
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Navbar from "./components/common/Navbar/Navbar";
 import "./global.css";
 import Footer from "./components/common/Footer/Footer";
-// import Services from "./Pages/Services/Services";
+import SingleService from "./Pages/Services/pages/Single-Service/SingleService";
+import Services from "./Pages/Services/Services";
 // import Printing from "./Pages/Single-service/Printing";
 import Contact from "./Pages/Contact/Contact";
 
@@ -17,7 +17,8 @@ function App() {
         <Route path="/" element={<Home />} />
         {/* <Route path="/services" element={<Services />} /> */}
         {/* <Route path="/services" element={<Printing/>} /> */}
-        <Route path="/services" element={<Contact/>} />
+        <Route path="/contact" element={<Contact/>} />
+        <Route path="/services" element={<SingleService />} />
       </Routes>
       <Footer />
     </Router>
