@@ -1,10 +1,67 @@
+// import React, { useState, useEffect } from "react";
+// import "./ServiceSection.css";
+// import ServiceCard from "../../common/Service-Card/ServiceCard";
+// import HomepageServiceCard from "../HomePage-Service-Card/HomepageServiceCard";
+// import { Splide, SplideSlide } from "@splidejs/react-splide";
+// import "@splidejs/react-splide/css";
+// import { useNavigate } from "react-router-dom";
+// const ServiceSection = () => {
+//   const [isMobile, setIsMobile] = useState(false);
+//   const navigate = useNavigate();
+
+//   useEffect(() => {
+//     const handleResize = () => {
+//       setIsMobile(window.innerWidth <= 768);
+//     };
+
+//     handleResize(); // Initial check
+//     window.addEventListener("resize", handleResize);
+//     return () => {
+//       window.removeEventListener("resize", handleResize);
+//     };
+//   }, []);
+//   return (
+//     <div className="service-section">
+//       <div className="top-section">
+//         <h1 className="header">Services we offer</h1>
+//         <button onClick={() => navigate("/services")}>See all</button>
+//       </div>
+//       <div className="bottom-section">
+//         {isMobile ? (
+//           <Splide className="service-card-carousel">
+//             <SplideSlide>
+//               <HomepageServiceCard />
+//             </SplideSlide>
+//             <SplideSlide>
+//               <HomepageServiceCard />
+//             </SplideSlide>
+//             <SplideSlide>
+//               <HomepageServiceCard />
+//             </SplideSlide>
+//           </Splide>
+//         ) : (
+//           <div className="service-cards">
+//             <ServiceCard />
+//             <ServiceCard />
+//             <ServiceCard />
+//           </div>
+//         )}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default ServiceSection;
+
 import React, { useState, useEffect } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./ServiceSection.css";
 import ServiceCard from "../../common/Service-Card/ServiceCard";
 import HomepageServiceCard from "../HomePage-Service-Card/HomepageServiceCard";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/react-splide/css";
 import { useNavigate } from "react-router-dom";
+
 const ServiceSection = () => {
   const [isMobile, setIsMobile] = useState(false);
   const navigate = useNavigate();
@@ -20,6 +77,15 @@ const ServiceSection = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <div className="service-section">
       <div className="top-section">
@@ -28,17 +94,17 @@ const ServiceSection = () => {
       </div>
       <div className="bottom-section">
         {isMobile ? (
-          <Splide className="service-card-carousel">
-            <SplideSlide>
+          <Slider {...settings} className="service-card-carousel">
+            <div>
               <HomepageServiceCard />
-            </SplideSlide>
-            <SplideSlide>
+            </div>
+            <div>
               <HomepageServiceCard />
-            </SplideSlide>
-            <SplideSlide>
+            </div>
+            <div>
               <HomepageServiceCard />
-            </SplideSlide>
-          </Splide>
+            </div>
+          </Slider>
         ) : (
           <div className="service-cards">
             <ServiceCard />
