@@ -14,7 +14,7 @@ const AboutSection = () => {
             <div className="about-image">
               <img
                 src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bW9kZWx8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                alt="image"
+                alt="about"
               />
             </div>
             <div className="about-name">

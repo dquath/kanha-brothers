@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import phoneIcon from "../../../Assets/icons/phone-icon.svg";
 import heroSample from "../../../Assets/images/Hero-sample.png";
 import downArrow from "../../../Assets/icons/down-arrow.svg";
