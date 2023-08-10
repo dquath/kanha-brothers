@@ -176,6 +176,7 @@
   .hero-content > .hero-subheading {
     font-size: 16px;
     line-height: 19px;
+    text-align: center;
   }
   .hero-links {
     flex-direction: column;

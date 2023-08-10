@@ -56,8 +56,8 @@
 
 @media (max-width: 480px) {
   .service-card {
-    width: 213px;
-    height: 291.84px;
+    width: 213px !important;
+    height: 291.84px !important;
   }
   .service-card > .card-title {
     padding: 10px 43.5px;
