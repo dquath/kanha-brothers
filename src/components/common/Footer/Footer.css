@@ -71,6 +71,13 @@
 .copyright-text > p > span {
   cursor: pointer;
 }
+.copyright-text > p > a {
+  text-decoration: none;
+  color: #fff;
+}
+.copyright-text > p > a:hover {
+  color: #ffc700;
+}
 .copyright-text > p > span:hover {
   color: #ffc700;
 }

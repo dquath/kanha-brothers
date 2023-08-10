@@ -74,6 +74,7 @@
 }
 .form > button:hover {
   background: #e39600;
+  cursor: pointer;
 }
 #phno {
   margin-top: 36px;
