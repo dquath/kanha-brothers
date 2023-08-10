@@ -56,7 +56,7 @@
 
 @media (max-width: 480px) {
   .service-card {
-    width: 213px !important;
+    width: 100% !important;
     height: 291.84px !important;
   }
   .service-card > .card-title {
