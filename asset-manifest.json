@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/kanha-brothers/static/css/main.2a6d16b4.css",
+    "main.css": "/kanha-brothers/static/css/main.a5c33db9.css",
     "main.js": "/kanha-brothers/static/js/main.8dba2f7f.js",
     "static/media/service-card-image.png": "/kanha-brothers/static/media/service-card-image.6a1af063276320c24d88.png",
     "static/media/Hero-sample.png": "/kanha-brothers/static/media/Hero-sample.5d110b60255b218e82e7.png",
@@ -22,11 +22,11 @@
     "static/media/prvs-arrow.svg": "/kanha-brothers/static/media/prvs-arrow.f6161bfb51a92fc4b88dd2605caabc1a.svg",
     "static/media/right-arrow-white.svg": "/kanha-brothers/static/media/right-arrow-white.0d8361e9936cf753e5d2932b29eaa994.svg",
     "static/media/next-arrow.svg": "/kanha-brothers/static/media/next-arrow.3e7941d2a4f9b59ad12c2eba9c60ecd2.svg",
-    "main.2a6d16b4.css.map": "/kanha-brothers/static/css/main.2a6d16b4.css.map",
+    "main.a5c33db9.css.map": "/kanha-brothers/static/css/main.a5c33db9.css.map",
     "main.8dba2f7f.js.map": "/kanha-brothers/static/js/main.8dba2f7f.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a6d16b4.css",
+    "static/css/main.a5c33db9.css",
     "static/js/main.8dba2f7f.js"
   ]
 }
