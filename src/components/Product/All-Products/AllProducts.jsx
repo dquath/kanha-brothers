@@ -5,12 +5,12 @@ const AllProducts = () => {
     <div className="our-services">
       <h2>Our Products</h2>
       <div className="all-service-cards">
-        <ServiceCard title={"Printing"} />
-        <ServiceCard />
-        <ServiceCard />
-        <ServiceCard />
-        <ServiceCard />
-        <ServiceCard />
+        <ServiceCard title={"Printing"} type="products" />
+        <ServiceCard type="products" />
+        <ServiceCard type="products" />
+        <ServiceCard type="products" />
+        <ServiceCard type="products" />
+        <ServiceCard type="products" />
       </div>
     </div>
   );

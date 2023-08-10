@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from "react";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./ServiceSection.css";
-import ServiceCard from "../../common/Service-Card/ServiceCard";
+
+import React, { useEffect, useState } from "react";
+
 import HomepageServiceCard from "../HomePage-Service-Card/HomepageServiceCard";
+import ServiceCard from "../../common/Service-Card/ServiceCard";
+import Slider from "react-slick";
 import { useNavigate } from "react-router-dom";
 
 const ServiceSection = () => {
@@ -52,9 +54,9 @@ const ServiceSection = () => {
           </Slider>
         ) : (
           <div className="service-cards">
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
+            <ServiceCard type="services" />
+            <ServiceCard type="services" />
+            <ServiceCard type="services" />
           </div>
         )}
       </div>

@@ -1,7 +1,8 @@
-import React from "react";
-import SingleServiceCard from "../../../../components/common/Single-Service-Card/SingleServiceCard";
+import React, { useState } from "react";
+
 import Pagination from "../../../../components/common/Pagination/Pagination";
 import SingleProductHeader from "../../../../components/Product/Single-Product-Header/SingleProductHeader";
+import SingleServiceCard from "../../../../components/common/Single-Service-Card/SingleServiceCard";
 const SingleProduct = () => {
   const [activePage, setActivePage] = useState(1);
 

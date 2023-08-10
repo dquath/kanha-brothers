@@ -1,7 +1,9 @@
+import "./Navbar.css";
+
 // Navbar.js
 import React, { useState } from "react";
+
 import { Link } from "react-router-dom";
-import "./Navbar.css";
 import Logo from "../../../Assets/images/Logo.png";
 import logoMobile from "../../../Assets/images/Logo-mobile.svg";
 
@@ -50,8 +52,8 @@ const Navbar = () => {
         <Link to="/products" onClick={handleLinkClick}>
           Products
         </Link>
-        <Link to="/jobs" onClick={handleLinkClick}>
-          Jobs
+        <Link to="/job-news" onClick={handleLinkClick}>
+          Job News
         </Link>
         <Link to="/contact" onClick={handleLinkClick}>
           Contact

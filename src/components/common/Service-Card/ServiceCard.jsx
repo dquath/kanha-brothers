@@ -1,11 +1,20 @@
+import "./ServiceCard.css";
+
+import { Link } from "react-router-dom";
 import React from "react";
 import { ReactComponent as RightArrow } from "../../../Assets/icons/right-arrow-white.svg";
 import cardImage from "../../../Assets/images/service-card-image.png";
-import "./ServiceCard.css";
-import { Link } from "react-router-dom";
-const ServiceCard = ({ title }) => {
+
+const ServiceCard = ({ title, type }) => {
+  let path;
+
+  if (type === "services") {
+    path = `/services/${title}`;
+  } else if (type === "products") {
+    path = `/products/${title}`;
+  }
   return (
-    <Link to={`/services/${title}`} style={{ textDecoration: "none" }}>
+    <Link to={path} style={{ textDecoration: "none" }}>
       <div className="service-card" style={{ background: `url(${cardImage})` }}>
         <div className="card-title">
           <h1 className="title-text">{title}</h1>

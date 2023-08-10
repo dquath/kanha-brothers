@@ -63,6 +63,10 @@
   cursor: pointer;
   position: relative;
 }
+.hero-contact > a {
+  text-decoration: none;
+  color: #000;
+}
 .hero-contact > img {
   width: 14px;
   height: 14px;
@@ -176,6 +180,11 @@
   .hero-links {
     flex-direction: column;
     gap: 32px;
+  }
+  .hero-images {
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 0;
   }
   .hero-images > img {
     border-radius: 8px;

@@ -1,5 +1,6 @@
-import React from "react";
 import "./AboutSection.css";
+
+import React from "react";
 import { useNavigate } from "react-router-dom";
 const AboutSection = () => {
   const navigate = useNavigate();
@@ -7,7 +8,7 @@ const AboutSection = () => {
     <div className="about-section">
       <div className="about-content">
         <div className="about-top">
-          <h1 className="about-heading">Who we are?</h1>
+          <h1 className="about-heading">Who are we?</h1>
         </div>
         <div className="about-middle">
           <div className="about-image-name">
@@ -29,19 +30,17 @@ const AboutSection = () => {
 
         <div className="about-bottom">
           <p>
-            Lorem ipsum dolor sit amet consectetur. Elit in in et massa cursus.
-            Sit eu ut diam nec lectus sem. Placerat lectus tortor risus mi ante
-            tristique mauris nisi sed. Non tortor nullam consectetur pulvinar
-            vel. Pellentesque egestas turpis pretium adipiscing id est dictum
-            velit sit. Id commodo dolor fringilla semper cursus facilisis.
-            Egestas donec feugiat nec a. Libero malesuada volutpat pulvinar
-            tristique non. Gravida euismod ultricies quam vel a sit. Dignissim
-            purus nisl rhoncus sit. Volutpat vitae dolor pellentesque est odio
-            lobortis egestas. Est varius ut nulla ac neque neque egestas
-            volutpat. Massa ac accumsan nunc laoreet quis nunc nisl augue. Leo
-            vitae malesuada ac enim magnis purus. Mi elementum ultrices sit
-            morbi commodo bibendum suscipit commodo eget. Risus eu nunc augue
-            eget proin arcu hac consequat.
+            Kanha and Brothers in Jyoti Vihar, Burla, Sambalpur established in
+            the year 1997, is one of the leading businesses in the Office
+            Stationery Dealers. Also known for Photocopying Centres, Office
+            Stationery Dealers. We believe that customer satisfaction is as
+            important as our products and services quality. We provide Extensive
+            Product Selection, Premium Quality, Competitive Prices and Excellent
+            Customer Service. Whether you're running a small home office or
+            managing a large corporate space, we have the products you need to
+            keep things organized, efficient, and inspiring. Join countless
+            satisfied customers who have made us their go-to source for office
+            stationery.
           </p>
           <div className="about-service">
             <button onClick={() => navigate("/services")}>

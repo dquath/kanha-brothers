@@ -45,9 +45,11 @@ const Footer = () => {
             <div className="footer-columns">
               <h1 className="footer-column-title">Address</h1>
               <div className="footer-links">
-                <p>
-                  Market Complex, Jyoti Vihar, <br /> Burla, Odisha 768019
-                </p>
+                <a href="https://goo.gl/maps/pM3uCPJioHS4ai4TA" target="_blank">
+                  <p>
+                    Market Complex, Jyoti Vihar, <br /> Burla, Odisha 768019
+                  </p>
+                </a>
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.791540291418!2d83.87897397526304!3d21.47669457224302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a213c30d3c00001%3A0x57a50679ae0cef7a!2sKanha%20%26%20Brothers!5e0!3m2!1sen!2sin!4v1691683540070!5m2!1sen!2sin"
                   width="223"
@@ -76,7 +78,9 @@ const Footer = () => {
           <img src={instagramIcon} alt="" />
           <img src={twitterIcon} alt="" />
           <img src={messageIcon} alt="" />
-          <img src={phoneFooterIcon} alt="" />
+          <a href="tel:+91-9439223702">
+            <img src={phoneFooterIcon} alt="" />
+          </a>
         </div>
       </div>
     </div>

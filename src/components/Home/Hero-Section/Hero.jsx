@@ -1,16 +1,18 @@
-import React from "react";
-import phoneIcon from "../../../Assets/icons/phone-icon.svg";
-import heroSample from "../../../Assets/images/Hero-sample.png";
-import downArrow from "../../../Assets/icons/down-arrow.svg";
 import "./Hero.css";
+
 import { Link } from "react-router-dom";
+import React from "react";
+import downArrow from "../../../Assets/icons/down-arrow.svg";
+import heroSample from "../../../Assets/images/Hero-sample.png";
+import phoneIcon from "../../../Assets/icons/phone-icon.svg";
+
 const Hero = () => {
   return (
     <div className="hero-section">
       <div className="hero-content">
         <h1 className="hero-heading">The Scholar’s Point</h1>
         <h3 className="hero-subheading">
-          Lorem ipsum dolor sit amet consectetur
+          Your one-stop shop for all your academic stationery needs.
         </h3>
       </div>
 
@@ -21,7 +23,9 @@ const Hero = () => {
 
         <div className="hero-contact">
           <img src={phoneIcon} alt="phone-icon" />
-          <p>+918763052472</p>
+          <a href="tel:+91-9439223702">
+            <p>+919439223702</p>
+          </a>
         </div>
       </div>
       <div className="hero-scroll">

@@ -4,8 +4,8 @@ const ProductHeader = () => {
     <div className="service-header">
       <h1 className="heading">Products</h1>
       <p className="description">
-        Lorem ipsum dolor sit amet consectetur. Amet at fermentum ut sed elit
-        adipiscing cursus ullamcorper libero.
+        Browse our premium products and artful accessories to elevate your
+        everyday experience. Shop now and let inspiration flow!
       </p>
       <button className="explore-btn">Explore our products</button>
     </div>
