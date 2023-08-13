@@ -66,8 +66,8 @@ const Contact = () => {
       <div className="right-part">
         <div className="right-top">
           <h4>CONTACT US</h4>
-          <p id="phno">+918763052472</p>
-          <p>hello@example.com</p>
+          <p id="phno">+919439223702</p>
+          <p>kanhaandbrothers@gmail.com</p>
         </div>
         <div className="right-down">
           <h4>ADDRESS</h4>

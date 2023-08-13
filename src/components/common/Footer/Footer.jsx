@@ -1,7 +1,7 @@
 import "./Footer.css";
 
 import { Link } from "react-router-dom";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import demoMap from "../../../Assets/images/Demo-map.png";
 import facebookIcon from "../../../Assets/icons/facebook-icon.svg";
 import footerLogo from "../../../Assets/images/Logo-mobile.svg";
@@ -11,6 +11,35 @@ import phoneFooterIcon from "../../../Assets/icons/phone-icon-footer.svg";
 import twitterIcon from "../../../Assets/icons/twitter-icon.svg";
 
 const Footer = () => {
+  const [serviceCategories, setServiceCategories] = useState([]);
+  const [productCategories, setProductCategories] = useState([]);
+  useEffect(() => {
+    fetch(
+      "https://kanhna-brothers-website.onrender.com/api/services/categories/all-Categories"
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        setServiceCategories(data);
+      })
+      .catch((error) => {
+        console.error("Error fetching service categories:", error);
+      });
+  }, []);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const productCategoriesResponse = await fetch(
+          "https://kanhna-brothers-website.onrender.com/api/products/categories/allProductCategories"
+        );
+        const productCategoriesData = await productCategoriesResponse.json();
+        setProductCategories(productCategoriesData);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
   return (
     <div className="footer">
       <div className="footer-top-section">
@@ -22,22 +51,21 @@ const Footer = () => {
             <div className="footer-columns">
               <h1 className="footer-column-title">Services</h1>
               <div className="footer-links">
-                <p>Printing</p>
-                <p>Xerox</p>
-                <p>Book Binding</p>
-                <p>Internet Cafe</p>
-                <p>Trophies</p>
-                <p>Coffee Mug</p>
-                <p>T-Shirt</p>
+                {serviceCategories.map((category) => (
+                  <Link to={`/services/${category.Tittle}`}>
+                    <p>{category.Tittle}</p>
+                  </Link>
+                ))}
               </div>
             </div>
             <div className="footer-columns">
               <h1 className="footer-column-title">Products</h1>
               <div className="footer-links">
-                <p>Coffee Mug</p>
-                <p>T-Shirt</p>
-                <p>Trophies</p>
-                <p>Office Stationary</p>
+                {productCategories.map((category) => (
+                  <Link to={`/products/${category.Tittle}`}>
+                    <p>{category.Tittle}</p>
+                  </Link>
+                ))}
               </div>
             </div>
           </div>
