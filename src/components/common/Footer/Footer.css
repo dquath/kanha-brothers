@@ -62,7 +62,7 @@
 }
 .footer-bottom-section {
   width: 1105px;
-  padding: 48px 0;
+  padding: 48px 0 0 0;
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #333333;

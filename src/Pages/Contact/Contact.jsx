@@ -40,14 +40,15 @@ const Contact = () => {
             onChange={handleChange}
           />
           <input
-            type="text"
+            type="number"
+            class="phno"
             name="phone"
             placeholder="Enter your phone number"
             value={formData.phone}
             onChange={handleChange}
           />
           <input
-            type="text"
+            type="email"
             name="email"
             placeholder="Enter your email"
             value={formData.email}
