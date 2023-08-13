@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5af1790c.css",
-    "main.js": "/static/js/main.b5557670.js",
+    "main.js": "/static/js/main.f30d40ea.js",
     "static/media/Hero-sample-1.png": "/static/media/Hero-sample-1.4b410f3dfea0fb02421c.png",
     "static/media/service-card-image.png": "/static/media/service-card-image.6a1af063276320c24d88.png",
     "static/media/Hero-sample-2.png": "/static/media/Hero-sample-2.5d110b60255b218e82e7.png",
@@ -27,10 +27,10 @@
     "static/media/next-arrow.svg": "/static/media/next-arrow.ecdd2ed4c784b2f6ea13b39e8820a889.svg",
     "static/media/right-arrow-white.svg": "/static/media/right-arrow-white.0d8361e9936cf753e5d2932b29eaa994.svg",
     "main.5af1790c.css.map": "/static/css/main.5af1790c.css.map",
-    "main.b5557670.js.map": "/static/js/main.b5557670.js.map"
+    "main.f30d40ea.js.map": "/static/js/main.f30d40ea.js.map"
   },
   "entrypoints": [
     "static/css/main.5af1790c.css",
-    "static/js/main.b5557670.js"
+    "static/js/main.f30d40ea.js"
   ]
 }
