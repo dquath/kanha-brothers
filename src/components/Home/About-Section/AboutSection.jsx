@@ -2,6 +2,7 @@ import "./AboutSection.css";
 
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import profilePic from "../../../Assets/images/shop-pic.jpg";
 const AboutSection = () => {
   const navigate = useNavigate();
   return (
@@ -13,14 +14,11 @@ const AboutSection = () => {
         <div className="about-middle">
           <div className="about-image-name">
             <div className="about-image">
-              <img
-                src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bW9kZWx8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                alt="about"
-              />
+              <img src={profilePic} alt="about" />
             </div>
             <div className="about-name">
-              <h3>John Doe</h3>
-              <p>Shop Owner</p>
+              <h3>Dibya Sankar Sahu</h3>
+              <p>Proprietor</p>
             </div>
           </div>
           <div className="about-contact">

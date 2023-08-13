@@ -5,7 +5,7 @@ import React from "react";
 import { ReactComponent as RightArrow } from "../../../Assets/icons/right-arrow-white.svg";
 import cardImage from "../../../Assets/images/service-card-image.png";
 
-const ServiceCard = ({ title, type }) => {
+const ServiceCard = ({ title, type, image, subTitle }) => {
   let path;
 
   if (type === "services") {
@@ -14,8 +14,14 @@ const ServiceCard = ({ title, type }) => {
     path = `/products/${title}`;
   }
   return (
-    <Link to={path} style={{ textDecoration: "none" }}>
-      <div className="service-card" style={{ background: `url(${cardImage})` }}>
+    <Link
+      to={{
+        pathname: path,
+        state: { subtitle: subTitle },
+      }}
+      style={{ textDecoration: "none", width: "100%" }}
+    >
+      <div className="service-card" style={{ background: `url(${image})` }}>
         <div className="card-title">
           <h1 className="title-text">{title}</h1>
           <div className="card-link">

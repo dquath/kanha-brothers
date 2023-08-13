@@ -3,7 +3,10 @@ import "./Hero.css";
 import { Link } from "react-router-dom";
 import React from "react";
 import downArrow from "../../../Assets/icons/down-arrow.svg";
-import heroSample from "../../../Assets/images/Hero-sample.png";
+import heroSample1 from "../../../Assets/images/Hero-sample-1.png";
+import heroSample2 from "../../../Assets/images/Hero-sample-2.png";
+import heroSample3 from "../../../Assets/images/Hero-Sample-3.jpg";
+import heroSample4 from "../../../Assets/images/Hero-sample-4.jpg";
 import phoneIcon from "../../../Assets/icons/phone-icon.svg";
 
 const Hero = () => {
@@ -41,10 +44,10 @@ const Hero = () => {
           <img src={downArrow} alt="down-arrow-icon" />
         </div>
         <div className="hero-images">
-          <img src={heroSample} alt="" />
-          <img src={heroSample} alt="" />
-          <img src={heroSample} alt="" />
-          <img src={heroSample} alt="" />
+          <img src={heroSample1} alt="" />
+          <img src={heroSample2} alt="" />
+          <img src={heroSample3} alt="" />
+          <img src={heroSample4} alt="" />
         </div>
       </div>
     </div>

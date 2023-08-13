@@ -74,10 +74,25 @@ const Footer = () => {
           </p>
         </div>
         <div className="social-icons">
-          <img src={facebookIcon} alt="" />
-          <img src={instagramIcon} alt="" />
-          <img src={twitterIcon} alt="" />
-          <img src={messageIcon} alt="" />
+          <a
+            target="_blank"
+            href="https://www.facebook.com/Kanhaandbrothers.in?mibextid=ZbWKwL"
+          >
+            <img src={facebookIcon} alt="" />
+          </a>
+          <a
+            target="_blank"
+            href="https://www.instagram.com/kanha_and_brothers/?igshid=MzRlODBiNWFlZA%3D%3D"
+          >
+            <img src={instagramIcon} alt="" />
+          </a>
+          <a target="_blank" href="https://twitter.com/home">
+            <img src={twitterIcon} alt="" />
+          </a>
+          <a href="mailto:kanhaandbrothers@gmail.com">
+            <img src={messageIcon} alt="" />
+          </a>
+
           <a href="tel:+91-9439223702">
             <img src={phoneFooterIcon} alt="" />
           </a>
