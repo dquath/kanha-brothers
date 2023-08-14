@@ -95,7 +95,13 @@
   display: flex;
   gap: 22px;
 }
+.displayed-map{
+  padding-top: 1.6rem;
+}
 @media (max-width: 768px) {
+  .footer{
+    margin-left: -5rem;
+  }
   .footer-top-section {
     flex-direction: column;
     gap: 58px;
@@ -109,6 +115,7 @@
   }
   .footer-bottom-section {
     width: 676px;
+    margin-left: 2rem;
   }
   .copyright-text {
     flex-direction: column;
@@ -131,5 +138,6 @@
     flex-direction: column-reverse;
     gap: 41px;
     align-items: flex-start;
+    padding-bottom: 4rem;
   }
 }

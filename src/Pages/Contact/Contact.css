@@ -67,6 +67,10 @@
   font-weight: 700;
   letter-spacing: 0.16px;
 }
+.right-down > p{
+  font-size: 16px;
+  font-family: Inter;
+}
 .map-image > img {
   width: 357px;
   height: 250px;
@@ -112,11 +116,18 @@
     gap: 4rem;
     padding: 1.75rem;
   }
+  .form{
+    margin-bottom: 4rem;
+  }
   .contact-heading {
     font-size: 1.75rem;
   }
   .form > input {
     width: 100%;
+    padding-left: 0;
+  }
+  .form > input::placeholder{
+    padding-left: 1.2rem;
   }
   .form > button {
     margin-left: auto;
@@ -125,5 +136,8 @@
   .left-part {
     margin: 0;
     row-gap: 1.5rem;
+  }
+  .map-image > iframe{
+    width: 100%;
   }
 }
