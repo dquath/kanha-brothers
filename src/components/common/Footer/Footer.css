@@ -105,7 +105,7 @@
 }
 @media (max-width: 768px) {
   .footer {
-    margin-left: -5rem;
+    padding-inline: 80px;
   }
   .footer-top-section {
     flex-direction: column;
@@ -118,10 +118,6 @@
   .footer-map {
     width: 223px;
   }
-  .footer-bottom-section {
-    width: 676px;
-    margin-left: 2rem;
-  }
   .copyright-text {
     flex-direction: column;
     gap: 16px;
@@ -129,7 +125,7 @@
 }
 @media (max-width: 426px) {
   .footer {
-    padding-bottom: 0px;
+    padding-inline: 32px;
   }
   .footer-links-section {
     flex-direction: column;
@@ -139,10 +135,8 @@
     gap: 48px;
   }
   .footer-bottom-section {
-    width: 264px;
     flex-direction: column-reverse;
     gap: 41px;
     align-items: flex-start;
-    padding-bottom: 4rem;
   }
 }
