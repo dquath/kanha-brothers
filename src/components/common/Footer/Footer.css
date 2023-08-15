@@ -1,6 +1,6 @@
 .footer {
   background: #111111;
-  padding: 80px 86px 49px 87px;
+  padding: 80px 86px 48px 87px;
   color: #fff;
   font-family: "Inter";
   display: flex;
@@ -95,11 +95,11 @@
   display: flex;
   gap: 22px;
 }
-.displayed-map{
+.displayed-map {
   padding-top: 1.6rem;
 }
 @media (max-width: 768px) {
-  .footer{
+  .footer {
     margin-left: -5rem;
   }
   .footer-top-section {
