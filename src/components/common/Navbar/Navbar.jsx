@@ -32,7 +32,6 @@ const Navbar = () => {
         <div>
           <span></span>
           <span></span>
-          <span></span>
         </div>
       </div>
       <div className={`nav-links ${isMenuOpen ? "open" : ""}`}>

@@ -65,12 +65,8 @@
   transform: rotate(45deg) translate(5px, 5px);
 }
 
-.open .menu-toggle span:nth-child(2) {
-  opacity: 0;
-}
-
 .open .menu-toggle span:last-child {
-  transform: rotate(-45deg) translate(4px, -4px);
+  transform: rotate(-45deg) translate(0, -1px);
 }
 
 @media (max-width: 768px) {
