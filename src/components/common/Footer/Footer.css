@@ -93,7 +93,13 @@
 }
 .social-icons {
   display: flex;
+  align-items: center;
   gap: 22px;
+}
+.social-icons > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .displayed-map {
   padding-top: 1.6rem;
