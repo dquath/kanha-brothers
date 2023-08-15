@@ -1,16 +1,16 @@
 .footer {
   background: #111111;
-  padding: 80px 86px 48px 87px;
+  padding: 80px 144px 48px;
   color: #fff;
   font-family: "Inter";
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 40px;
   border-top: 1px solid #333333;
 }
 .footer-top-section {
   display: flex;
+  justify-content: center;
   gap: 187px;
 }
 .footer-logo > img {
@@ -61,7 +61,6 @@
   margin-top: 24px;
 }
 .footer-bottom-section {
-  width: 1105px;
   padding: 48px 0 0 0;
   display: flex;
   justify-content: space-between;
