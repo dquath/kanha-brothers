@@ -20,10 +20,8 @@
 .form {
   display: flex;
   flex-direction: column;
-  padding-top: 31px;
-  padding-left: 32px;
-  padding-right: 33px;
-  padding-bottom: 32px;
+  align-items: center;
+  padding: 31px 33px 32px 32px;
   /* border-style: solid; */
   row-gap: 36px;
   background: #ffecba;
