@@ -1,16 +1,17 @@
-import React from "react";
 import "./Home.css";
+
+import AboutSection from "../../components/Home/About-Section/AboutSection";
+// import Footer from "../../components/common/Footer/Footer";
+import GallerySection from "../../components/Home/Gallery-Section/GallerySection";
 // import Navbar from "../../components/common/Navbar/Navbar";
 import Hero from "../../components/Home/Hero-Section/Hero";
-// import Footer from "../../components/common/Footer/Footer";
-import ServiceSection from "../../components/Home/Service-Section/ServiceSection";
-import AboutSection from "../../components/Home/About-Section/AboutSection";
+import React from "react";
 
 const Home = () => {
   return (
     <div className="home">
       <Hero />
-      {/* <ServiceSection /> */}
+      <GallerySection />
       <AboutSection />
     </div>
   );
