@@ -4,7 +4,7 @@ import "./Navbar.css";
 import React, { useState } from "react";
 
 import { Link } from "react-router-dom";
-import Logo from "../../../Assets/images/Logo.png";
+import Logo from "../../../Assets/images/Logo.svg";
 import logoMobile from "../../../Assets/images/Logo-mobile.svg";
 
 const Navbar = () => {
