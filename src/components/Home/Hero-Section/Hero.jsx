@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="hero-content">
         <h1 className="hero-heading">The Scholar’s Point</h1>
         <h3 className="hero-subheading">
-          Your one-stop shop for all your academic stationery needs.
+          The one-stop shop for all your academic stationery needs.
         </h3>
       </div>
 
