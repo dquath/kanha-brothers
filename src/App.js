@@ -1,6 +1,6 @@
 import "./global.css";
 
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Route, HashRouter as Router, Routes } from "react-router-dom";
 
 // import Printing from "./Pages/Single-service/Printing";
 import Contact from "./Pages/Contact/Contact";
