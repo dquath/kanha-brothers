@@ -1,10 +1,12 @@
-import { React, useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import { useLocation } from "react-router-dom";
 import "./SingleService.css";
+
+import { React, useEffect, useState } from "react";
+
+import Pagination from "../../../../components/common/Pagination/Pagination";
 import SingleServiceCard from "../../../../components/common/Single-Service-Card/SingleServiceCard";
 import SingleServiceHeader from "../../../../components/Service/Single-Service-Header/SingleServiceHeader";
-import Pagination from "../../../../components/common/Pagination/Pagination";
+import { useParams } from "react-router-dom";
+
 const SingleService = () => {
   const [activePage, setActivePage] = useState(1);
   const { title } = useParams();

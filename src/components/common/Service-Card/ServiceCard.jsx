@@ -3,7 +3,6 @@ import "./ServiceCard.css";
 import { Link } from "react-router-dom";
 import React from "react";
 import { ReactComponent as RightArrow } from "../../../Assets/icons/right-arrow-white.svg";
-import cardImage from "../../../Assets/images/service-card-image.png";
 
 const ServiceCard = ({ title, type, image, subTitle }) => {
   let path;
