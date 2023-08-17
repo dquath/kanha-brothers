@@ -1,6 +1,6 @@
 import "./global.css";
 
-import { Route, HashRouter as Router, Routes } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes, useLocation } from "react-router-dom";
 
 // import Printing from "./Pages/Single-service/Printing";
 import Contact from "./Pages/Contact/Contact";
@@ -8,6 +8,7 @@ import Footer from "./components/common/Footer/Footer";
 import Home from "./Pages/Home/Home";
 import Jobs from "./Pages/Jobs/Jobs";
 import Navbar from "./components/common/Navbar/Navbar";
+import NotFound from "./Pages/404";
 import Product from "./Pages/Product/Product";
 import React from "react";
 import ScrollToTop from "./ScrollToTop";
@@ -19,17 +20,17 @@ function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <ScrollToTop/>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/products" element={<Product />} />
-        <Route path="/contact" element={<Contact/>} />
-        <Route path="/job-news" element={<Jobs/>} />
-        <Route path="/services/:title" element={<SingleService />} />
-        <Route path="/products/:title" element={<SingleProduct />} />
-      </Routes>
-      <Footer />
+        <Routes>
+          <Route path="*" element={<NotFound/>} />
+          <Route path="/" element={<><Navbar /><Home /><Footer /></>} />
+        <Route path="/services" element={<><Navbar /><Services /><Footer /></>} />
+        <Route path="/products" element={<><Navbar /><Product /><Footer /></>} />
+        <Route path="/contact" element={<><Navbar /><Contact /><Footer /></>} />
+        <Route path="/job-news" element={<><Navbar /><Jobs /><Footer /></>} />
+        <Route path="/services/:title" element={<><Navbar /><SingleService /><Footer /></>} />
+        <Route path="/products/:title" element={<><Navbar /><SingleProduct /><Footer /></>} />
+
+        </Routes>
     </Router>
   );
 }
