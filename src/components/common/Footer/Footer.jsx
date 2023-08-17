@@ -1,8 +1,8 @@
 import "./Footer.css";
 
+import React, { useEffect, useState } from "react";
+
 import { Link } from "react-router-dom";
-import React, { useState, useEffect } from "react";
-import demoMap from "../../../Assets/images/Demo-map.png";
 import facebookIcon from "../../../Assets/icons/facebook-icon.svg";
 import footerLogo from "../../../Assets/images/Logo-mobile.svg";
 import instagramIcon from "../../../Assets/icons/instagram-icon.svg";
