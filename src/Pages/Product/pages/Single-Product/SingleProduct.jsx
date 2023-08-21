@@ -4,6 +4,7 @@ import Pagination from "../../../../components/common/Pagination/Pagination";
 import SingleProductHeader from "../../../../components/Product/Single-Product-Header/SingleProductHeader";
 import SingleServiceCard from "../../../../components/common/Single-Service-Card/SingleServiceCard";
 import { useParams } from "react-router-dom";
+
 const SingleProduct = () => {
   const [activePage, setActivePage] = useState(1);
   const { title } = useParams();
@@ -36,7 +37,7 @@ const SingleProduct = () => {
     };
 
     fetchData();
-  }, []);
+  }, [title]);
   function getSubTitleByTitle(title) {
     const foundItem = allCategories.find((item) => item.Tittle === title);
     return foundItem ? foundItem.Sub_tittle : null; // Return null if title not found in array

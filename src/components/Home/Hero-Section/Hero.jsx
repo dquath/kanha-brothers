@@ -13,9 +13,9 @@ const Hero = () => {
   return (
     <div className="hero-section">
       <div className="hero-content">
-        <h1 className="hero-heading">The Scholar’s Point</h1>
+        <h1 className="hero-heading">Kanha And Brothers</h1>
         <h3 className="hero-subheading">
-          The one-stop shop for all your academic stationery needs.
+          Scholars Heaven : Stationary, Printing & Academic Support
         </h3>
       </div>
 

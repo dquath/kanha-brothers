@@ -39,7 +39,7 @@ const SingleService = () => {
     };
 
     fetchData();
-  }, []);
+  }, [title]);
 
   const handlePageChange = (page) => {
     setActivePage(page);
